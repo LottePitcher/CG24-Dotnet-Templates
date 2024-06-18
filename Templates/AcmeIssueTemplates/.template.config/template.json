@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Acme Corp.",
+    "name": "Acme Issue Templates",
+    "identity": "Acme.Templates.IssueTemplates",
+    "shortName": "acmeissuetemplates",
+    "tags": {
+      "type": "item"
+    },
+    "description": "",
+    "classifications": [ ],
+    "sourceName": "AcmeIssueTemplates"
+}

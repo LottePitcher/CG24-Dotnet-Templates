@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Acme corp.",
+    "name": "Acme Readme",
+    "identity": "Acme.Templates.Readme",
+    "shortName": "acmereadme",
+    "tags": {
+      "type": "item"
+    },
+    "description": "A skeleton readme for all Acme projects",
+    "classifications": [ "Readme" ],
+    "sourceName": "AcmeReadme",
+    "symbols": {
+      "friendlySiteName": {
+        "type": "derived",
+        "valueSource": "name",
+        "replaces": "FriendlySiteName",
+        "valueTransform": "pascalCaseToSpaces"
+      }
+    },
+    "forms": {
+      "pascalCaseToSpaces": {
+        "identifier": "replace",
+        "pattern": "([A-Z][a-z]+)",
+        "replacement": "$1 "
+      }
+    }
+}

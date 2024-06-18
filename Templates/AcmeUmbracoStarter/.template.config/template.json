@@ -1,0 +1,70 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Acme Corp.",
+    "name": "Acme Umbraco Starter",
+    "identity": "Acme.Templates.UmbracoStarter",
+    "shortName": "acmeumbracostarter",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "description": "",
+    "classifications": [ "Web", "Umbraco" ],
+    "sourceName": "AcmeUmbracoStarter",
+    "preferNameDirectory": true,
+    "guids": [
+      "0689f3f6-a356-4267-9847-822bc9198944"
+    ],
+    "sources": [
+      {
+        "modifiers": [
+          {
+            "exclude": [
+              "umbraco/Logs/**",
+              "umbraco/Data/**",
+              ".vs/**"
+            ]
+          }
+        ]
+      }
+    ],
+  "symbols": {
+    "httpPort": {
+      "type": "generated",
+      "generator": "port",
+      "parameters": {
+        "fallback": 5000
+      },
+      "replaces": "4505"
+    },
+    "httpsPort": {
+      "type": "generated",
+      "generator": "port",
+      "parameters": {
+        "low": 44300,
+        "high": 44399,
+        "fallback": 5001
+      },
+      "replaces": "44367"
+    },
+    "deliveryApi": {
+      "type": "parameter",
+      "datatype": "bool",
+      "displayName": "Enable Delivery API",
+      "defaultValue": "false"
+    }
+  },
+  "postActions": [
+    {
+      "condition": "(deliveryApi)",
+      "description": "Enable Delivery API in appSettings.json",
+      "actionId": "695A3659-EB40-4FF5-A6A6-C9C4E629FCB0",
+      "args": {
+        "jsonFileName": ".\\appSettings.json",
+        "parentPropertyPath": "Umbraco:CMS:DeliveryApi",
+        "newJsonPropertyName": "Enabled",
+        "newJsonPropertyValue": "true"
+      }
+    }
+  ]
+}
