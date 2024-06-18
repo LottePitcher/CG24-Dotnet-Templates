@@ -1,6 +1,6 @@
-# Dotnet New Custom Templates
+# Custom Dotnet New Template Samples
 
-This repository contains the demo templates from my talk at Codegarden 2024 entitled "Kick-start your way to speedy consistency; a guide to custom dotnet new templates". The video will be available for anyone to view in September; I'll add a link here when it is.
+This repository contains the demo templates from my talk at [Codegarden 2024](https://codegarden.umbraco.com/) entitled "Kick-start your way to speedy consistency; a guide to custom dotnet new templates". The video will be available for anyone to view in September; I'll add a link here when it is.
 
 ## Installing Locally
 
@@ -8,7 +8,7 @@ If you want to install and test these locally:
 
 - Clone this repository
 - Navigate to the `Templates` folder
-- cmd > `dotnet new install .\`
+- `cmd > dotnet new install .\`
 
 ## Templates
 
